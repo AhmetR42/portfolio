@@ -193,7 +193,7 @@ function field() {
         const alpha = 0.05 + fromCentre * 0.17 + (wave + 2) * 0.02;
         const r = 1.1 + heat * 1.7 + (wave + 2) * 0.15;
         ctx.fillStyle = heat > 0.05
-          ? `rgba(255, ${Math.round(87 + (1 - heat) * 120)}, 34, ${Math.min(1, alpha + heat * 0.8)})`
+          ? `rgba(255, ${Math.round(166 + (1 - heat) * 60)}, 43, ${Math.min(1, alpha + heat * 0.8)})`
           : `rgba(244, 241, 236, ${alpha})`;
         ctx.fillRect(px - r / 2, py - r / 2, r, r);
       }

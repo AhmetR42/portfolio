@@ -1,165 +1,132 @@
-const translations = {
-  en: {
-    live_link: "Live",
-    brand: "Ahmet",
-    nav_about: "About",
-    nav_skills: "Skills",
-    nav_projects: "Projects",
-    nav_contact: "Contact",
+// All text on the page in English and Dutch. Elements with data-i18n="key" are filled in automatically.
 
-    cta_github: "GitHub",
-    cta_projects: "View Projects",
-    cta_contact: "Contact",
-
-    kicker: "Software Developer • MBO ICT",
-    hero_title_line1: "Building",
-    hero_title_line2: "full-stack",
-    hero_title_line3: "projects that look great and work fast.",
-    hero_subtitle: "PHP/Laravel, JavaScript, SQL, Docker. I’m growing my GitHub with real projects for internships.",
-
-    meta_open: "Open to internship",
-    meta_location: "Netherlands",
-
-    stat_focus_label: "Focus",
-    stat_focus_value: "Full-stack (Laravel + SQL)",
-    stat_goal_label: "Goal",
-    stat_goal_value: "Strong GitHub + portfolio",
-
-    mini_1_t: "Clean code",
-    mini_1_d: "Readable structure",
-    mini_2_t: "Testing",
-    mini_2_d: "Basics + practice",
-    mini_3_t: "Docker",
-    mini_3_d: "Local dev setup",
-    mini_4_t: "Git",
-    mini_4_d: "Clean commits",
-
-    about_title: "About",
-    about_text: "I’m a 2nd-year MBO ICT student. I enjoy building backend logic and connecting it to clean UI.",
-    about_callout_t: "What I’m working on",
-    about_li_1: "Laravel CRUD + auth",
-    about_li_2: "REST APIs + SQL relations",
-    about_li_3: "Dockerized development",
-
-    skills_title: "Skills",
-
-    projects_title: "Projects",
-    projects_hint: "Each project includes code, screenshots and a clear README.",
-    badge_frontend: "FRONTEND",
-    badge_soon: "SOON",
-    p1_title: "Portfolio Lite",
-    p1_desc: "Modern portfolio with EN/NL language switch and clean layout.",
-    p2_title: "Kanban Board",
-    p2_desc: "Drag & drop task board using localStorage.",
-    p3_title: "Unity Mini Game",
-    p3_desc: "A small 2D game prototype (learning project).",
-    repo_link: "Repo",
-    live_soon: "Live soon",
-    repo_soon: "Repo soon",
-
-    filter_all: "All",
-    filter_frontend: "Frontend",
-    filter_fullstack: "Full-Stack",
-    filter_unity: "Unity",
-
-    contact_title: "Contact",
-    contact_text: "Want to collaborate or discuss an internship? Send me a message.",
-    contact_email: "Email",
-    back_to_top: "Back to top",
+export const STRINGS = {
+  "en": {
+    "nav.work": "Work",
+    "nav.about": "About",
+    "nav.contact": "Contact",
+    "facts.projects": "projects with a README and screenshots",
+    "facts.tests": "automated tests across them",
+    "facts.languages": "languages in every app: English and Dutch",
+    "facts.ci": "apps that build and test themselves on every push",
+    "work.title": "Selected work",
+    "work.intro": "Every project has its own look, a live demo or a Docker setup, and tests that run on every push.",
+    "p.centwise.lead": "A budget app: a Laravel REST API with a JavaScript dashboard on top.",
+    "p.centwise.1": "Monthly budgets per category with a spending-pace chart",
+    "p.centwise.2": "Token auth with Sanctum, 15 documented endpoints",
+    "p.centwise.3": "Hand-made SVG charts and savings goals",
+    "p.fithelper.lead": "A workout tracker with an exercise library where every exercise is shown by an animated figure.",
+    "p.fithelper.1": "FastAPI backend with a REST API and SQLite",
+    "p.fithelper.2": "50 exercises, each animated with SVG and simple inverse kinematics",
+    "p.fithelper.3": "Grew out of my first Python console app",
+    "live": "Live demo",
+    "p.applytrack.lead": "Keeps every internship application in one place, from \"applied\" to \"offer\".",
+    "p.applytrack.1": "Accounts, a status timeline per application and a dashboard",
+    "p.applytrack.2": "CSV export and a full Dutch translation",
+    "p.applytrack.3": "Animated canvas background in dark mode",
+    "p.kanban.lead": "A task board that works without a server: drag cards, edit them and export the board.",
+    "p.kanban.1": "Drag and drop with the mouse, touch and keyboard",
+    "p.kanban.2": "Autosave, undo, search and PDF export",
+    "p.kanban.3": "Pure logic kept separate and covered by tests",
+    "about.title": "About me",
+    "about.big": "I like it when something works well and also feels good to use.",
+    "about.p1": "I'm a second-year MBO ICT student in the Netherlands. I started with small console programs in Python and moved on to full web apps with Laravel and JavaScript.",
+    "about.p2": "For an internship I'm looking for a team where I can work on real products, learn from experienced developers and help on both the backend and the frontend.",
+    "about.speaks": "I speak",
+    "contact.kicker": "Have an internship spot?",
+    "contact.cta": "Let's talk",
+    "contact.copy": "copy",
+    "footer.top": "Back to top ↑",
+    "contact.copied": "Copied!",
+    "hero.hi": "Hi! I'm",
+    "hero.sub": "Full-stack developer in training, building",
+    "hero.roles": "Laravel APIs.|JavaScript interfaces.|Python backends.|apps that are tested.",
+    "hero.cta": "See my work",
+    "hero.together": "Looking for an internship",
+    "hero.place": "Netherlands · NL / EN / TR",
+    "nav.services": "What I do",
+    "svc.title": "What I can do for your team",
+    "svc.intro": "Everything below is something I have built and shipped in my own projects.",
+    "svc.api.title": "Backend & APIs",
+    "svc.api.text": "REST APIs with validation, token login, clear error answers and documentation.",
+    "svc.front.title": "Frontend",
+    "svc.front.text": "Interfaces in plain JavaScript and CSS that work on a phone and with a keyboard.",
+    "svc.db.title": "Databases",
+    "svc.db.text": "Data models, migrations and queries, with money stored safely as whole cents.",
+    "svc.test.title": "Testing & CI",
+    "svc.test.text": "Feature and unit tests that GitHub Actions runs on every push.",
+    "svc.docker.title": "Docker & hosting",
+    "svc.docker.text": "Apps that start with one command and go online on Render or GitHub Pages.",
+    "svc.lang.title": "Two languages",
+    "svc.lang.text": "Every interface in English and Dutch, with all text kept in one place.",
+    "form.name": "Your name",
+    "form.email": "Your email",
+    "form.message": "Message",
+    "form.send": "Send message",
+    "form.subject": "Internship · message from the portfolio"
   },
-
-  nl: {
-    live_link: "Live",
-    brand: "Ahmet",
-    nav_about: "Over mij",
-    nav_skills: "Vaardigheden",
-    nav_projects: "Projecten",
-    nav_contact: "Contact",
-
-    cta_github: "GitHub",
-    cta_projects: "Bekijk projecten",
-    cta_contact: "Contact",
-
-    kicker: "Software Developer • MBO ICT",
-    hero_title_line1: "Ik bouw",
-    hero_title_line2: "full-stack",
-    hero_title_line3: "projecten die er goed uitzien en snel werken.",
-    hero_subtitle: "PHP/Laravel, JavaScript, SQL, Docker. Ik bouw echte projecten op GitHub voor mijn stage.",
-
-    meta_open: "Beschikbaar voor stage",
-    meta_location: "Nederland",
-
-    stat_focus_label: "Focus",
-    stat_focus_value: "Full-stack (Laravel + SQL)",
-    stat_goal_label: "Doel",
-    stat_goal_value: "Sterke GitHub + portfolio",
-
-    mini_1_t: "Clean code",
-    mini_1_d: "Duidelijke structuur",
-    mini_2_t: "Testing",
-    mini_2_d: "Basis + oefenen",
-    mini_3_t: "Docker",
-    mini_3_d: "Lokale dev setup",
-    mini_4_t: "Git",
-    mini_4_d: "Netjes committen",
-
-    about_title: "Over mij",
-    about_text: "Ik ben een 2e-jaars MBO ICT student. Ik bouw graag backend logica en verbind dit met een strakke UI.",
-    about_callout_t: "Waar ik aan werk",
-    about_li_1: "Laravel CRUD + auth",
-    about_li_2: "REST API’s + SQL relaties",
-    about_li_3: "Docker development",
-
-    skills_title: "Vaardigheden",
-
-    projects_title: "Projecten",
-    projects_hint: "Elk project heeft code, screenshots en een duidelijke README.",
-    badge_frontend: "FRONTEND",
-    badge_soon: "BINNENKORT",
-    p1_title: "Portfolio Lite",
-    p1_desc: "Modern portfolio met EN/NL taalwissel en strakke layout.",
-    p2_title: "Kanban Board",
-    p2_desc: "Takenbord met drag & drop via localStorage.",
-    p3_title: "Unity Mini Game",
-    p3_desc: "Een kleine 2D game prototype (leerproject).",
-    repo_link: "Repo",
-    live_soon: "Live binnenkort",
-    repo_soon: "Repo binnenkort",
-
-    filter_all: "Alle",
-    filter_frontend: "Frontend",
-    filter_fullstack: "Full-Stack",
-    filter_unity: "Unity",
-
-    contact_title: "Contact",
-    contact_text: "Wil je samenwerken of mijn stage bespreken? Stuur me een bericht.",
-    contact_email: "E-mail",
-    back_to_top: "Naar boven",
+  "nl": {
+    "nav.work": "Werk",
+    "nav.about": "Over mij",
+    "nav.contact": "Contact",
+    "facts.projects": "projecten met een README en screenshots",
+    "facts.tests": "geautomatiseerde tests in totaal",
+    "facts.languages": "talen in elke app: Engels en Nederlands",
+    "facts.ci": "apps die zichzelf bouwen en testen bij elke push",
+    "work.title": "Geselecteerd werk",
+    "work.intro": "Elk project heeft een eigen stijl, een live demo of Docker-setup, en tests die bij elke push draaien.",
+    "p.centwise.lead": "Een budgetapp: een Laravel REST API met een JavaScript-dashboard erbovenop.",
+    "p.centwise.1": "Maandbudgetten per categorie met een grafiek van je uitgaventempo",
+    "p.centwise.2": "Token-authenticatie met Sanctum, 15 gedocumenteerde endpoints",
+    "p.centwise.3": "Zelfgemaakte SVG-grafieken en spaardoelen",
+    "p.fithelper.lead": "Een workout-tracker met een oefeningenbibliotheek waarin elke oefening wordt voorgedaan door een geanimeerd figuur.",
+    "p.fithelper.1": "FastAPI-backend met een REST API en SQLite",
+    "p.fithelper.2": "50 oefeningen, elk geanimeerd met SVG en eenvoudige inverse kinematica",
+    "p.fithelper.3": "Gegroeid uit mijn eerste Python-consoleapp",
+    "live": "Live demo",
+    "p.applytrack.lead": "Houdt al je stage-sollicitaties bij op één plek, van \"gesolliciteerd\" tot \"aanbod\".",
+    "p.applytrack.1": "Accounts, een statustijdlijn per sollicitatie en een dashboard",
+    "p.applytrack.2": "CSV-export en een volledige Nederlandse vertaling",
+    "p.applytrack.3": "Geanimeerde canvas-achtergrond in de donkere modus",
+    "p.kanban.lead": "Een takenbord dat zonder server werkt: kaarten slepen, bewerken en het bord exporteren.",
+    "p.kanban.1": "Slepen met muis, touch en toetsenbord",
+    "p.kanban.2": "Automatisch opslaan, ongedaan maken, zoeken en PDF-export",
+    "p.kanban.3": "Pure logica apart gehouden en gedekt door tests",
+    "about.title": "Over mij",
+    "about.big": "Ik vind het mooi als iets goed werkt én fijn voelt om te gebruiken.",
+    "about.p1": "Ik ben tweedejaars MBO ICT-student in Nederland. Ik begon met kleine consoleprogramma's in Python en ging door naar volledige webapps met Laravel en JavaScript.",
+    "about.p2": "Voor mijn stage zoek ik een team waar ik aan echte producten kan werken, kan leren van ervaren developers en kan helpen aan zowel de backend als de frontend.",
+    "about.speaks": "Ik spreek",
+    "contact.kicker": "Heb je een stageplek?",
+    "contact.cta": "Laten we praten",
+    "contact.copy": "kopieer",
+    "footer.top": "Terug naar boven ↑",
+    "contact.copied": "Gekopieerd!",
+    "hero.hi": "Hoi! Ik ben",
+    "hero.sub": "Full-stack developer in opleiding. Ik bouw",
+    "hero.roles": "Laravel API's.|JavaScript-interfaces.|Python-backends.|apps die getest zijn.",
+    "hero.cta": "Bekijk mijn werk",
+    "hero.together": "Op zoek naar een stage",
+    "hero.place": "Nederland · NL / EN / TR",
+    "nav.services": "Wat ik doe",
+    "svc.title": "Wat ik voor je team kan doen",
+    "svc.intro": "Alles hieronder heb ik zelf gebouwd en opgeleverd in mijn eigen projecten.",
+    "svc.api.title": "Backend & API's",
+    "svc.api.text": "REST API's met validatie, inloggen met tokens, duidelijke foutmeldingen en documentatie.",
+    "svc.front.title": "Frontend",
+    "svc.front.text": "Interfaces in gewone JavaScript en CSS die werken op een telefoon en met een toetsenbord.",
+    "svc.db.title": "Databases",
+    "svc.db.text": "Datamodellen, migraties en queries, met geldbedragen veilig opgeslagen in hele centen.",
+    "svc.test.title": "Testen & CI",
+    "svc.test.text": "Feature- en unittests die GitHub Actions bij elke push draait.",
+    "svc.docker.title": "Docker & hosting",
+    "svc.docker.text": "Apps die met één commando starten en online gaan op Render of GitHub Pages.",
+    "svc.lang.title": "Twee talen",
+    "svc.lang.text": "Elke interface in het Engels en Nederlands, met alle tekst op één plek.",
+    "form.name": "Je naam",
+    "form.email": "Je e-mail",
+    "form.message": "Bericht",
+    "form.send": "Verstuur bericht",
+    "form.subject": "Stage · bericht via het portfolio"
   }
 };
-
-function setActiveLangButton(lang){
-  document.querySelectorAll(".lang__btn").forEach(btn => {
-    btn.setAttribute("aria-pressed", String(btn.dataset.lang === lang));
-  });
-}
-
-function applyTranslations(lang){
-  const dict = translations[lang] || translations.en;
-  document.documentElement.lang = lang;
-
-  document.querySelectorAll("[data-i18n]").forEach(el => {
-    const key = el.dataset.i18n;
-    if (dict[key]) el.textContent = dict[key];
-  });
-
-  setActiveLangButton(lang);
-  localStorage.setItem("lang", lang);
-}
-
-const saved = localStorage.getItem("lang") || "en";
-applyTranslations(saved);
-
-document.querySelectorAll(".lang__btn").forEach(btn => {
-  btn.addEventListener("click", () => applyTranslations(btn.dataset.lang));
-});

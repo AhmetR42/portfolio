@@ -2,7 +2,7 @@
 
 My personal website: who I am, what I can do for a team and the projects I have built. It is a static site with no framework and no build step, hosted on GitHub Pages.
 
-**Live:** [ahmetr42.github.io/portfolio-lite](https://ahmetr42.github.io/portfolio-lite/)
+**Live:** [ahmetr42.github.io/portfolio](https://ahmetr42.github.io/portfolio/)
 
 ![Hero](docs/hero.webp)
 

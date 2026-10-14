@@ -63,7 +63,10 @@ export const STRINGS = {
     "form.email": "Your email",
     "form.message": "Message",
     "form.send": "Send message",
-    "form.subject": "Internship · message from the portfolio"
+    "form.subject": "Internship · message from the portfolio",
+    "lang.nl": "Dutch",
+    "lang.en": "English",
+    "lang.tr": "Turkish"
   },
   "nl": {
     "nav.work": "Werk",
@@ -127,6 +130,9 @@ export const STRINGS = {
     "form.email": "Je e-mail",
     "form.message": "Bericht",
     "form.send": "Verstuur bericht",
-    "form.subject": "Stage · bericht via het portfolio"
+    "form.subject": "Stage · bericht via het portfolio",
+    "lang.nl": "Nederlands",
+    "lang.en": "Engels",
+    "lang.tr": "Turks"
   }
 };
